@@ -1,0 +1,11 @@
+inherit gnome2
+
+DESCRIPTION="GNOME VNC server"
+
+CPPFLAGS+=" -include getaddrinfo.h"
+LIBS="-lgetaddrinfo"
+
+CYGCONF_ARGS="
+	--enable-gnome-keyring
+	--disable-ipv6
+"
