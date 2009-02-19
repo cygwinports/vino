@@ -1,0 +1,9 @@
+category: Net X11
+requires: cygwin GConf2 libdbus-glib_1_2 libdbus1_3 libgconf2_4 libgcrypt11 libgetaddrinfo0 libglade2.0_0 libglib2.0_0 libgnome-keyring0 libgnome2_0 libgnomeui2_0 libgnutls26 libgtk2.0_0 libintl8 libjpeg62 libnotify1 libunique1.0_0 libX11_6 libXdamage1 libXext6 libXfixes3 libXtst6 zlib
+sdesc: "GNOME VNC server"
+ldesc: "The package contains an integrated VNC server for GNOME.
+
+NOTE: this is an *X11* VNC server. Clients connecting to this
+server will only see your X11 session, and will have no access
+to the Windows desktop."
+

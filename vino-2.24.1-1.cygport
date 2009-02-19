@@ -6,6 +6,13 @@ CPPFLAGS+=" -include getaddrinfo.h"
 LIBS="-lgetaddrinfo"
 
 CYGCONF_ARGS="
+	--disable-avahi
+	--enable-gcrypt
 	--enable-gnome-keyring
+	--enable-gnutls
+	--enable-libnotify
+	--enable-libunique
 	--disable-ipv6
+	--with-jpeg
+	--with-libz --with-zlib
 "

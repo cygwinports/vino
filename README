@@ -1,0 +1,174 @@
+vino
+------------------------------------------
+The package contains an integrated VNC server for GNOME.
+
+NOTE: this is an *X11* VNC server. Clients connecting to this 
+server will only see your X11 session, and will have no access 
+to the Windows desktop.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+  libdbus-glib_1_2-0.78-1
+  libdbus1_3-1.2.4-1
+  libgconf2_4-2.24.0-1
+  libgcrypt11-1.4.1-4
+  libgetaddrinfo0-1.6.3-3
+  libglade2.0_0-2.6.3-2
+  libglib2.0_0-2.18.4-1
+  libgnome-keyring0-2.24.1-1
+  libgnome2_0-2.24.1-1
+  libgnomeui2_0-2.24.0-1
+  libgnutls26-2.4.1-1
+  libgtk2.0_0-2.14.7-2
+  libintl8-0.17-2
+  libjpeg62-6b-12
+  libnotify1-0.4.5-1
+  libunique1.0_0-1.0.6-1
+  libX11_6-1.1.5-2
+  libXdamage1-1.1.1-2
+  libXext6-1.0.4-1
+  libXfixes3-4.0.3-2
+  libXtst6-1.0.3-2
+  zlib-1.2.3-2
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-2
+  binutils-20080624-2
+  bison-2.3-1
+  cygport-0.4.2-1
+  flex-2.5.35-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  libtool-2.2.6a-1
+  make-3.81-1
+  pkg-config-0.23a-2
+  sed-4.1.5-2
+
+Canonical website:
+  http://www.gnome.org/
+
+Canonical download:
+  ftp://ftp.gnome.org/pub/GNOME/sources/vino/
+
+-------------------------------------------
+
+Build instructions:
+  unpack vino-2.24.1-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./vino-2.24.1-X.cygport all
+
+This will create:
+  /usr/src/vino-2.24.1-X-src.tar.bz2
+  /usr/src/vino-2.24.1-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/gconf/schemas/vino-server.schemas
+  /etc/postinstall/vino.sh
+  /etc/preremove/vino.sh
+  /usr/bin/vino-passwd.exe
+  /usr/bin/vino-preferences.exe
+  /usr/sbin/vino-server.exe
+  /usr/share/applications/vino-preferences.desktop
+  /usr/share/doc/vino-2.24.1/AUTHORS
+  /usr/share/doc/vino-2.24.1/COPYING
+  /usr/share/doc/vino-2.24.1/ChangeLog
+  /usr/share/doc/vino-2.24.1/INSTALL
+  /usr/share/doc/vino-2.24.1/MAINTAINERS
+  /usr/share/doc/vino-2.24.1/NEWS
+  /usr/share/doc/vino-2.24.1/README
+  /usr/share/gnome/autostart/vino-server.desktop
+  /usr/share/locale/ar/LC_MESSAGES/vino.mo
+  /usr/share/locale/as/LC_MESSAGES/vino.mo
+  /usr/share/locale/az/LC_MESSAGES/vino.mo
+  /usr/share/locale/be@latin/LC_MESSAGES/vino.mo
+  /usr/share/locale/bg/LC_MESSAGES/vino.mo
+  /usr/share/locale/bn/LC_MESSAGES/vino.mo
+  /usr/share/locale/bn_IN/LC_MESSAGES/vino.mo
+  /usr/share/locale/bs/LC_MESSAGES/vino.mo
+  /usr/share/locale/ca/LC_MESSAGES/vino.mo
+  /usr/share/locale/cs/LC_MESSAGES/vino.mo
+  /usr/share/locale/cy/LC_MESSAGES/vino.mo
+  /usr/share/locale/da/LC_MESSAGES/vino.mo
+  /usr/share/locale/de/LC_MESSAGES/vino.mo
+  /usr/share/locale/dz/LC_MESSAGES/vino.mo
+  /usr/share/locale/el/LC_MESSAGES/vino.mo
+  /usr/share/locale/en_CA/LC_MESSAGES/vino.mo
+  /usr/share/locale/en_GB/LC_MESSAGES/vino.mo
+  /usr/share/locale/es/LC_MESSAGES/vino.mo
+  /usr/share/locale/et/LC_MESSAGES/vino.mo
+  /usr/share/locale/eu/LC_MESSAGES/vino.mo
+  /usr/share/locale/fa/LC_MESSAGES/vino.mo
+  /usr/share/locale/fi/LC_MESSAGES/vino.mo
+  /usr/share/locale/fr/LC_MESSAGES/vino.mo
+  /usr/share/locale/gl/LC_MESSAGES/vino.mo
+  /usr/share/locale/gu/LC_MESSAGES/vino.mo
+  /usr/share/locale/he/LC_MESSAGES/vino.mo
+  /usr/share/locale/hi/LC_MESSAGES/vino.mo
+  /usr/share/locale/hr/LC_MESSAGES/vino.mo
+  /usr/share/locale/hu/LC_MESSAGES/vino.mo
+  /usr/share/locale/id/LC_MESSAGES/vino.mo
+  /usr/share/locale/it/LC_MESSAGES/vino.mo
+  /usr/share/locale/ja/LC_MESSAGES/vino.mo
+  /usr/share/locale/ka/LC_MESSAGES/vino.mo
+  /usr/share/locale/kn/LC_MESSAGES/vino.mo
+  /usr/share/locale/ko/LC_MESSAGES/vino.mo
+  /usr/share/locale/ku/LC_MESSAGES/vino.mo
+  /usr/share/locale/lt/LC_MESSAGES/vino.mo
+  /usr/share/locale/lv/LC_MESSAGES/vino.mo
+  /usr/share/locale/mk/LC_MESSAGES/vino.mo
+  /usr/share/locale/ml/LC_MESSAGES/vino.mo
+  /usr/share/locale/mn/LC_MESSAGES/vino.mo
+  /usr/share/locale/mr/LC_MESSAGES/vino.mo
+  /usr/share/locale/ms/LC_MESSAGES/vino.mo
+  /usr/share/locale/nb/LC_MESSAGES/vino.mo
+  /usr/share/locale/ne/LC_MESSAGES/vino.mo
+  /usr/share/locale/nl/LC_MESSAGES/vino.mo
+  /usr/share/locale/nn/LC_MESSAGES/vino.mo
+  /usr/share/locale/oc/LC_MESSAGES/vino.mo
+  /usr/share/locale/or/LC_MESSAGES/vino.mo
+  /usr/share/locale/pa/LC_MESSAGES/vino.mo
+  /usr/share/locale/pl/LC_MESSAGES/vino.mo
+  /usr/share/locale/pt/LC_MESSAGES/vino.mo
+  /usr/share/locale/pt_BR/LC_MESSAGES/vino.mo
+  /usr/share/locale/ro/LC_MESSAGES/vino.mo
+  /usr/share/locale/ru/LC_MESSAGES/vino.mo
+  /usr/share/locale/rw/LC_MESSAGES/vino.mo
+  /usr/share/locale/si/LC_MESSAGES/vino.mo
+  /usr/share/locale/sk/LC_MESSAGES/vino.mo
+  /usr/share/locale/sl/LC_MESSAGES/vino.mo
+  /usr/share/locale/sq/LC_MESSAGES/vino.mo
+  /usr/share/locale/sr/LC_MESSAGES/vino.mo
+  /usr/share/locale/sr@latin/LC_MESSAGES/vino.mo
+  /usr/share/locale/sv/LC_MESSAGES/vino.mo
+  /usr/share/locale/ta/LC_MESSAGES/vino.mo
+  /usr/share/locale/te/LC_MESSAGES/vino.mo
+  /usr/share/locale/th/LC_MESSAGES/vino.mo
+  /usr/share/locale/tr/LC_MESSAGES/vino.mo
+  /usr/share/locale/ug/LC_MESSAGES/vino.mo
+  /usr/share/locale/uk/LC_MESSAGES/vino.mo
+  /usr/share/locale/vi/LC_MESSAGES/vino.mo
+  /usr/share/locale/wa/LC_MESSAGES/vino.mo
+  /usr/share/locale/xh/LC_MESSAGES/vino.mo
+  /usr/share/locale/zh_CN/LC_MESSAGES/vino.mo
+  /usr/share/locale/zh_HK/LC_MESSAGES/vino.mo
+  /usr/share/locale/zh_TW/LC_MESSAGES/vino.mo
+  /usr/share/vino/vino-preferences.glade
+  /usr/share/vino/vino-prompt.glade
+
+------------------
+
+Port Notes:
+
+----- version 2.24.1-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/
