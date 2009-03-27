@@ -7,42 +7,42 @@ server will only see your X11 session, and will have no access
 to the Windows desktop.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libdbus-glib_1_2-0.78-1
-  libdbus1_3-1.2.4-1
-  libgconf2_4-2.24.0-1
+  cygwin-1.7.0-44
+  libdbus-glib_1_2-0.80-10
+  libdbus1_3-1.2.12-10
+  libgcc1-4.3.2-2
+  libgconf2_4-2.26.0-1
   libgcrypt11-1.4.1-4
-  libgetaddrinfo0-1.6.3-3
-  libglade2.0_0-2.6.3-2
-  libglib2.0_0-2.18.4-1
-  libgnome-keyring0-2.24.1-1
-  libgnome2_0-2.24.1-1
-  libgnomeui2_0-2.24.0-1
+  libglade2.0_0-2.6.4-1
+  libglib2.0_0-2.20.0-1
+  libgnome-keyring0-2.26.0-1
+  libgnome2_0-2.26.0-1
+  libgnomeui2_0-2.24.1-1
   libgnutls26-2.4.1-1
-  libgtk2.0_0-2.14.7-2
-  libintl8-0.17-2
-  libjpeg62-6b-12
-  libnotify1-0.4.5-1
-  libunique1.0_0-1.0.6-1
-  libX11_6-1.1.5-2
-  libXdamage1-1.1.1-2
-  libXext6-1.0.4-1
-  libXfixes3-4.0.3-2
-  libXtst6-1.0.3-2
-  zlib-1.2.3-2
+  libgtk2.0_0-2.16.0-1
+  libintl8-0.17-10
+  libjpeg62-6b-20
+  libnotify1-0.4.5-10
+  libunique1.0_0-1.0.8-1
+  libX11_6-1.2-10
+  libXdamage1-1.1.1-10
+  libXext6-1.0.5-10
+  libXfixes3-4.0.3-10
+  libXtst6-1.0.3-10
+  zlib0-1.2.3-10
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-1
-  automake1.10-1.10.1-2
+  autoconf2.5-2.63-10
+  automake1.10-1.10.1-10
   binutils-20080624-2
   bison-2.3-1
-  cygport-0.4.2-1
+  cygport-0.9.6-1
   flex-2.5.35-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  libtool-2.2.6a-1
-  make-3.81-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  libtool-2.2.6a-2
+  make-3.81-2
   pkg-config-0.23a-2
   sed-4.1.5-2
 
@@ -55,15 +55,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack vino-2.24.1-X-src.tar.bz2
+  unpack vino-2.26.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./vino-2.24.1-X.cygport all
+  cygport ./vino-2.26.0-X.cygport all
 
 This will create:
-  /usr/src/vino-2.24.1-X-src.tar.bz2
-  /usr/src/vino-2.24.1-X.tar.bz2
+  /usr/src/vino-2.26.0-X-src.tar.bz2
+  /usr/src/vino-2.26.0-X.tar.bz2
 
 -------------------------------------------
 
@@ -72,20 +72,20 @@ Files included in the binary package:
   /etc/gconf/schemas/vino-server.schemas
   /etc/postinstall/vino.sh
   /etc/preremove/vino.sh
+  /etc/xdg/autostart/vino-server.desktop
   /usr/bin/vino-passwd.exe
   /usr/bin/vino-preferences.exe
   /usr/sbin/vino-server.exe
   /usr/share/applications/vino-preferences.desktop
-  /usr/share/doc/vino-2.24.1/AUTHORS
-  /usr/share/doc/vino-2.24.1/COPYING
-  /usr/share/doc/vino-2.24.1/ChangeLog
-  /usr/share/doc/vino-2.24.1/INSTALL
-  /usr/share/doc/vino-2.24.1/MAINTAINERS
-  /usr/share/doc/vino-2.24.1/NEWS
-  /usr/share/doc/vino-2.24.1/README
-  /usr/share/gnome/autostart/vino-server.desktop
+  /usr/share/doc/vino/AUTHORS
+  /usr/share/doc/vino/COPYING
+  /usr/share/doc/vino/ChangeLog
+  /usr/share/doc/vino/MAINTAINERS
+  /usr/share/doc/vino/NEWS
+  /usr/share/doc/vino/README
   /usr/share/locale/ar/LC_MESSAGES/vino.mo
   /usr/share/locale/as/LC_MESSAGES/vino.mo
+  /usr/share/locale/ast/LC_MESSAGES/vino.mo
   /usr/share/locale/az/LC_MESSAGES/vino.mo
   /usr/share/locale/be@latin/LC_MESSAGES/vino.mo
   /usr/share/locale/bg/LC_MESSAGES/vino.mo
@@ -161,13 +161,14 @@ Files included in the binary package:
   /usr/share/locale/zh_TW/LC_MESSAGES/vino.mo
   /usr/share/vino/vino-preferences.glade
   /usr/share/vino/vino-prompt.glade
+  /usr/share/vino/webservices
 
 ------------------
 
 Port Notes:
 
------ version 2.24.1-1 -----
-Initial release for Cygwin.
+----- version 2.26.0-1 -----
+Initial release of GNOME 2.26 for Cygwin 1.7.
 
 
 Cygwin port maintained by:

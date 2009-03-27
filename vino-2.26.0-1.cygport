@@ -2,9 +2,6 @@ inherit gnome2
 
 DESCRIPTION="GNOME VNC server"
 
-CPPFLAGS+=" -include getaddrinfo.h"
-LIBS="-lgetaddrinfo"
-
 CYGCONF_ARGS="
 	--disable-avahi
 	--enable-gcrypt
@@ -12,7 +9,8 @@ CYGCONF_ARGS="
 	--enable-gnutls
 	--enable-libnotify
 	--enable-libunique
-	--disable-ipv6
+	--enable-ipv6
+	--disable-network-manager
 	--with-jpeg
 	--with-libz --with-zlib
 "
