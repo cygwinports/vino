@@ -7,19 +7,19 @@ server will only see your X11 session, and will have no access
 to the Windows desktop.
 
 Runtime requirements:
-  cygwin-1.7.0-44
+  cygwin-1.7.0-45
   libdbus-glib_1_2-0.80-10
   libdbus1_3-1.2.12-10
   libgcc1-4.3.2-2
   libgconf2_4-2.26.0-1
   libgcrypt11-1.4.1-4
   libglade2.0_0-2.6.4-1
-  libglib2.0_0-2.20.0-1
+  libglib2.0_0-2.20.1-1
   libgnome-keyring0-2.26.0-1
   libgnome2_0-2.26.0-1
   libgnomeui2_0-2.24.1-1
   libgnutls26-2.4.1-1
-  libgtk2.0_0-2.16.0-1
+  libgtk2.0_0-2.16.1-1
   libintl8-0.17-10
   libjpeg62-6b-20
   libnotify1-0.4.5-10
@@ -55,15 +55,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack vino-2.26.0-X-src.tar.bz2
+  unpack vino-2.26.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./vino-2.26.0-X.cygport all
+  cygport ./vino-2.26.1-X.cygport all
 
 This will create:
-  /usr/src/vino-2.26.0-X-src.tar.bz2
-  /usr/src/vino-2.26.0-X.tar.bz2
+  /usr/src/vino-2.26.1-X-src.tar.bz2
+  /usr/src/vino-2.26.1-X.tar.bz2
 
 -------------------------------------------
 
@@ -166,6 +166,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 2.26.1-1 -----
+Version bump.
 
 ----- version 2.26.0-1 -----
 Initial release of GNOME 2.26 for Cygwin 1.7.
