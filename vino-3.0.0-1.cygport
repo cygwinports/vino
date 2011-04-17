@@ -1,0 +1,17 @@
+inherit gnome2
+
+DESCRIPTION="GNOME VNC server"
+
+CYGCONF_ARGS="
+	--libexecdir=/usr/bin
+	--enable-ipv6
+	--without-avahi
+	--with-gcrypt
+	--with-gnome-keyring
+	--with-gnutls
+	--with-libnotify
+	--with-telepathy
+	--with-jpeg
+	--without-network-manager
+	--with-libz --with-zlib
+"
