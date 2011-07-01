@@ -5,7 +5,7 @@ DESCRIPTION="GNOME VNC server"
 CYGCONF_ARGS="
 	--libexecdir=/usr/bin
 	--enable-ipv6
-	--without-avahi
+	--with-avahi
 	--with-gcrypt
 	--with-gnome-keyring
 	--with-gnutls
