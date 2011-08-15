@@ -13,5 +13,5 @@ CYGCONF_ARGS="
 	--with-telepathy
 	--with-jpeg
 	--without-network-manager
-	--with-libz --with-zlib
+	--with-zlib
 "
