@@ -1,0 +1,24 @@
+inherit gnome2
+
+NAME="vino"
+VERSION=3.4.1
+RELEASE=2
+CATEGORY="Gnome Net"
+SUMMARY="GNOME VNC server"
+DESCRIPTION="The package contains an integrated VNC server for GNOME.
+NOTE: this is an *X11* VNC server. Clients connecting to this server will
+only see your X11 session, and will have no access to the Windows desktop."
+
+CYGCONF_ARGS="
+	--libexecdir=/usr/bin
+	--enable-ipv6
+	--with-avahi
+	--with-gcrypt
+	--with-gnome-keyring
+	--with-gnutls
+	--with-libnotify
+	--with-telepathy
+	--with-jpeg
+	--without-network-manager
+	--with-zlib
+"

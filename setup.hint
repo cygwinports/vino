@@ -1,9 +1,0 @@
-category: Gnome Net X11
-requires: libavahi-client3 libavahi-common3 libavahi-glib1 libcairo2 libdbus-glib_1_2 libgcrypt11 libglib2.0_0 libgnome-keyring0 libgnutls26 libgtk3_0 libICE6 libintl8 libjpeg8 libnotify4 libSM6 libsoup2.4_1 libtelepathy-glib0 libX11_6 libXdamage1 libXext6 libXfixes3 libXtst6 zlib0
-sdesc: "GNOME VNC server"
-ldesc: "The package contains an integrated VNC server for GNOME.
-
-NOTE: this is an *X11* VNC server. Clients connecting to this
-server will only see your X11 session, and will have no access
-to the Windows desktop."
-
