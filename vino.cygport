@@ -1,9 +1,9 @@
 inherit gnome2
 
 NAME="vino"
-VERSION=3.4.1
-RELEASE=2
-CATEGORY="Gnome Net"
+VERSION=3.6.2
+RELEASE=1
+CATEGORY="GNOME Net"
 SUMMARY="GNOME VNC server"
 DESCRIPTION="The package contains an integrated VNC server for GNOME.
 NOTE: this is an *X11* VNC server. Clients connecting to this server will
@@ -14,11 +14,11 @@ CYGCONF_ARGS="
 	--enable-ipv6
 	--with-avahi
 	--with-gcrypt
-	--with-gnome-keyring
 	--with-gnutls
 	--with-libnotify
 	--with-telepathy
 	--with-jpeg
 	--without-network-manager
+	--with-secret
 	--with-zlib
 "
