@@ -2,7 +2,7 @@ inherit gnome2
 
 NAME="vino"
 VERSION=3.22.0
-RELEASE=1
+RELEASE=2
 CATEGORY="GNOME Net"
 SUMMARY="GNOME VNC server"
 DESCRIPTION="The package contains an integrated VNC server for GNOME.
